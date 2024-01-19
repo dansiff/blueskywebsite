@@ -67,14 +67,14 @@ export default function Footer() {
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com"
+                 href="https://twitter.com/bskytelepsych"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/BlueSky-Telepsych/100092431592418/"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Facebook</span>
