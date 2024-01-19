@@ -4,13 +4,13 @@ import React from "react";
 import Container from "./container";
 
 export default function Footer() {
-  const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
-    "Blog",
-  ];
+    const companyInfo = {
+        Name: "BlueSky Telepsych",
+        address: "1431 Opus Pl, Suite 110",
+        phone: "(888) 279-0002",
+        email: "hello@blueskytelepsych.com",
+
+    };
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
@@ -44,7 +44,7 @@ export default function Footer() {
                 rel="noopener"
                 className="relative block w-44">
                 <Image
-                  src="/img/vercel.svg"
+                  src="/img/logo.svg"
                   alt="Blueskytelepsych"
                   width="212"
                   height="44"
