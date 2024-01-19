@@ -66,22 +66,11 @@ const Hero = () => {
             customers worldwide
           </div>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
+                  <div className="flex justify-center items-center mt-10">
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <AmazonLogo />
+              <LogoSection />
             </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <VerizonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <MicrosoftLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <NetflixLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <SonyLogo />
-            </div>
+            
           </div>
         </div>
       </Container>
@@ -89,9 +78,9 @@ const Hero = () => {
   );
 }
 
-export  function LogosSection() {
+  function LogosSection() {
     return (
-        <div>
+        <div className="flex justify-center items-center mt-10">
           
             <Image
                 src="/img/brands/insurance_logos.png" // Make sure to put the correct path to the image
