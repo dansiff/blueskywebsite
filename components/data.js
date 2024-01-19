@@ -7,13 +7,13 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import Medicalimage1 from "../public/img/Medicalimage1.jpg";
+import Medicalimage2 from "../public/img/Medicalimage2.jpg";
 
 const benefitOne = {
   title: "Highlight BlueSky Network",
   desc: "BlueSky network has access across the United States",
-  image: benefitOneImg,
+  image: Medicalimage1,
   bullets: [
     {
       title: "Find what kind of therapy is right for you.",
@@ -35,8 +35,8 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "Offer more here",
-  desc: "use bullet points or images.",
-  image: benefitTwoImg,
+    desc: "use bullet points or images.",
+    image: Medicalimage2,
   bullets: [
     {
       title: "Mobile Responsive Website",
