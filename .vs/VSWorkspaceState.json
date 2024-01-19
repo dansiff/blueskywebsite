@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\components",
+    "\\css",
     "\\pages",
-    "\\public"
+    "\\public",
+    "\\public\\img",
+    "\\public\\img\\brands"
   ],
-  "SelectedNode": "\\pages\\index.js",
+  "SelectedNode": "\\components\\popupWidget.js",
   "PreviewInSolutionExplorer": false
 }

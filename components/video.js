@@ -22,12 +22,12 @@ const Video = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="sr-only">We could put a video here</span>
+              <span className="sr-only">We could put a video here. Videos are shown to increase engagement.</span>
             </button>
           )}
           {playVideo && (
             <iframe
-              src="https://www.youtube-nocookie.com/embed/aOq49euWnIo?controls=0&autoplay=1"
+               src="https://www.youtube.com/embed/zRVc4v9fF9U?si=T7MvTYCL0WcPb5uS"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

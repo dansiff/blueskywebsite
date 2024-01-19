@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+      <nav className="container sticky top-0 z-50 relative flex flex-wrap items-center justify-between bg-blue-600 p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
@@ -31,7 +31,7 @@ const Navbar = () => {
                         className="w-8"
                       />
                     </span>
-                    <span>Nextly</span>
+                    <span>BlueSky</span>
                   </span>
                 </Link>
 
