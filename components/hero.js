@@ -89,7 +89,7 @@ const Hero = () => {
   );
 }
 
-export default function LogosSection() {
+export  function LogosSection() {
     return (
         <div>
           
