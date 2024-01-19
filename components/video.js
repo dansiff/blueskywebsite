@@ -22,7 +22,7 @@ const Video = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="sr-only">Play Video</span>
+              <span className="sr-only">We could put a video here</span>
             </button>
           )}
           {playVideo && (
