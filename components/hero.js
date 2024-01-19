@@ -68,7 +68,7 @@ const Hero = () => {
 
                   <div className="flex justify-center items-center mt-10">
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <LogoSection />
+              <LogosSection />
             </div>
             
           </div>
