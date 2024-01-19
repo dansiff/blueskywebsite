@@ -28,8 +28,9 @@ const Home = () => {
       <Hero />
       <SectionTitle
         pretitle="Hero Section"
-        title=" Why Blue Sky">
-        This webpage can be adjusted to include any style or function we want..
+              title=" BlueSky serves patients in 12 states: ">
+              Arizona, Colorado, Connecticut,Kentucky,
+              Illinois, Maryland, Massachusetts,  Minnesota, New Mexico, North Carolina, Ohio, Oregon, Texas, and Washington.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
