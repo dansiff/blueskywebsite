@@ -4,10 +4,11 @@
     "\\components",
     "\\css",
     "\\pages",
+    "\\pages\\api",
     "\\public",
     "\\public\\img",
     "\\public\\img\\brands"
   ],
-  "SelectedNode": "\\components\\popupWidget.js",
+  "SelectedNode": "\\components\\data.js",
   "PreviewInSolutionExplorer": false
 }

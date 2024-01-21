@@ -10,7 +10,8 @@ const Cta = () => {
                       Our providers specialize in a wide range of disorders
           </h2>
           <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
-            Don&apos;t let your visitors see a poor landing.
+                      Finding the best mental health treatment should be easy.
+                      BlueSky is here to support you on your mental healthcare journey..
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
