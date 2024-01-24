@@ -7,7 +7,8 @@
     "\\pages\\api",
     "\\public",
     "\\public\\img",
-    "\\public\\img\\brands"
+    "\\public\\img\\brands",
+    "\\public\\img\\Mov"
   ],
   "SelectedNode": "\\components\\data.js",
   "PreviewInSolutionExplorer": false
