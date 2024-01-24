@@ -6,7 +6,7 @@ import {
   AdjustmentsHorizontalIcon,
   SunIcon,
 } from "@heroicons/react/24/solid";
-
+import Image from 'next/image'
 import Medicalimage1 from "../public/img/Medicalimage1.jpg";
 import Medicalimage2 from "../public/img/Medicalimage2.jpg";
 
@@ -21,21 +21,21 @@ const benefitOne = {
       icon: <FaceSmileIcon />,
     },
     {
-      title: "place holder",
-      desc: "place holder",
+      title: "BlueSky Is Here",
+        desc: "Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "place holder",
-      desc: "place holder.",
+        title: "Same day appoints available",
+      desc: "Evidence-based psychiatric treatment from a team that cares.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more here",
-    desc: "use bullet points or images.",
+  title: "Our providers specialize in a wide range of disorders",
+    desc: "Get support for ADHD, ADD, anxiety, anger management, bipolar disorder, depression, grief bereavement, medication management, panic disorder, personality disorder, psychotic disorder, PTSD, and more.        .",
     image: Medicalimage2,
   bullets: [
     {
@@ -44,13 +44,13 @@ const benefitTwo = {
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Custom Development",
-      desc: "This Site is powered by latest technologies and tools.",
+      title: "BlueSky Service Areas",
+      desc: "BlueSky has an extensive network of licensed providers throughout the US.",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode users can choose via top right header button. ",
+      title: "Avaliable in 12 States:",
+      desc: "Arizona, Colorado, Connecticut, Kentucky, Illinois, Maryland, Massachusetts, Minnesota, New Mexico, North Carolina, Ohio, Oregon, Texas, Washington. ",
       icon: <SunIcon />,
     },
   ],

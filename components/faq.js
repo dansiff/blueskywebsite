@@ -35,22 +35,19 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this site completely open to customization?",
-    answer: "Yes, this site can be adjusted by anyone via .js files with easy to understand code CMS implementation coming.",
+    question: "Does BlueSky accept insurance?",
+        answer: "Yes, use your  Blue Cross Blue Shield, Cigna, Aetna, Optum, and United Healthcare insurance plans to cover treatmen from licensed BlueSky mental health care providers.or you can pay out-of-pocket.",
   },
+ 
   {
-    question: "place holder?",
-    answer: "Yes.",
-  },
-  {
-    question: "can be removed in seconds or extended in minutes? ",
+      question: "Does BlueSky have in-person and virtual appointments available? ",
     answer:
-      "Adjust anything in a few small steps, no questions asked.",
+      "ABlueSky is 100% online. All psychiatric evaluations and appointments are conducted via online video telehealth sessions.",
   },
   {
-    question: "Do you offer technical support? ",
+      question: "What states does BlueSky provide psychiatric care? ",
     answer:
-      "Let me know what you need i'll get right on it.",
+      "BlueSky serves patients in 12 states: Arizona, Colorado, Connecticut,Kentucky, Illinois, Maryland, Massachusetts,  Minnesota, New Mexico, North Carolina, Ohio, Oregon, Texas, and Washington.",
   },
 ];
 

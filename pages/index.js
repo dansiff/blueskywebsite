@@ -19,7 +19,7 @@ const Home = () => {
         <title> Blue Sky Welcome</title>
         <meta
           name="description"
-          content="Place holder for our landing page"
+          content=""
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,31 +27,27 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Hero Section"
+        pretitle="Locations"
               title=" BlueSky serves patients in 12 states: ">
               Arizona, Colorado, Connecticut,Kentucky,
               Illinois, Maryland, Massachusetts,  Minnesota, New Mexico, North Carolina, Ohio, Oregon, Texas, and Washington.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
-        pretitle="landing pages with video might be the right move"
-        title="place holder for video section">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
-      <Video />
+      
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers we can plug in the ZOC DOC reviews here.
+              "Great service and would highly recommend!"
+              Joshua F.
+
+.
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="Contact" title="Contact">
-        additional section for more details
-        .
+              phone: "(888) 279-0002",
+              email: "hello@blueskytelepsych.com"
+       
       </SectionTitle>
       <Faq />
       <Cta />
