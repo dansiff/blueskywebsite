@@ -13,6 +13,9 @@ import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import OverviewBlock from "../components/OverviewBlock";
 import Reviews from "../components/Reviews";
+import FeatureSection from "../components/FeatureSection";
+import LogoSection from '../components/LogoSection';
+import HighLight from '../components/HighLight';
 const Home = () => { 
   return (
     <>
@@ -27,17 +30,13 @@ const Home = () => {
 
       <Navbar />
       <Hero />
-      
-      
-          <Benefits imgPos="left" data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-          
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
-             >
-      </SectionTitle>
+      <FeatureSection />
+      <HighLight />
+         
           <Reviews />
+          
+          <Benefits imgPos="right" data={benefitTwo} />
+          
           <OverviewBlock  
               pretitle="BLUESKY SERVICE AREAS"
               title="BlueSky has an extensive network of licensed providers throughout the Globe.
@@ -50,12 +49,8 @@ Arizona - Colorado - Connecticut - Kentucky - Illinois - Maryland - Massachusett
               backgroundImage="/img/Femaledoctor.jpg"
               
               />
-         
-      <SectionTitle pretitle="Contact" title="Contact">
-              phone: "(888) 279-0002",
-              email: "hello@blueskytelepsych.com"
-       
-      </SectionTitle>
+         <LogoSection />
+     
       <Faq />
           <Cta />
       <LearnMore />

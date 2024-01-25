@@ -2,9 +2,25 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
+    const [hasScrolled, setHasScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            setHasScrolled(offset > 10);  // Set to true when scrolled down by 10px
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    const navBarClasses = `fixed top-0 inset-x-0 transition-colors duration-300 z-50 ${hasScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        }`;
+
+
     return (
+        
         <div className="bg-white shadow-md">
             <nav className="container mx-auto p-4 flex justify-between items-center max-w-7xl">
                

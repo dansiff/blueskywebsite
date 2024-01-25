@@ -39,7 +39,7 @@ const Benefits = ({ imgPos, data }) => {
             </div>
 
             <div
-                className={`flex flex-col items-center justify-center w-full lg:w-1/2 lg:max-w-md p-8 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
+                className={`flex flex-col items-center justify-center w-full lg:w-1/2 lg:max-w-md p-8 py-4 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
                     } p-8`}
             >
                 <h3 className="text-2xl items-center lg:text-3xl font-bold text-gray-800 mb-4">

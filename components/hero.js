@@ -10,6 +10,8 @@ const Hero = () => {
                   <video autoPlay loop muted playsInline className="absolute top-0 left-0 z-0 w-full h-full object-cover"
                       poster="/img/femaledoctor.jpg"> <source src="/img/Mov/shutterstock_1058470684.mov" type="video/mp4" />
                       Your browser does not support the video tag.     </video>
+                  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+
                   <div className="relative z-10 flex flex-col items-center justify-center h-full w-full text-center">
                       <h1 className="text-4xl font-bold tracking-tight text-white lg:text-5xl  dark:text-white">
                                      Quality Psychiatric Care Provider
@@ -41,39 +43,12 @@ const Hero = () => {
         </div>
              
       </Container>
-      <Container>
-        <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
-                     
-          </div>
-
-                  <div className="flex justify-center items-center mt-10">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <LogosSection />
-            </div>
-            
-          </div>
-        </div>
-      </Container>
+     
     </>
   );
 }
 
-  function LogosSection() {
-    return (
-        <div className="flex justify-center items-center mt-10 w-full max-w-6x1 mx-auto">
-          
-            <Image
-                src="/img/brands/big6k5ui.png" // Make sure to put the correct path to the image
-                alt="Insurance Accepted Logos"
-                width={2048} // Set the correct width (in pixels)
-                height={423}  // Set the correct height (in pixels)
-                layout="responsive" // This will make the image scale nicely to the parent element
-            />
-            
-        </div>
-    );
-}
+  
 function AmazonLogo() {
     return (
         <svg

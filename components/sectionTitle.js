@@ -1,31 +1,18 @@
 import React from "react";
 import Container from "./container";
 
-const SectionTitle = (props) => {
-  return (
-    <Container style="background-color: blue;"
-      className={`flex w-full flex-col mt-4 ${
-        props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}>
-      {props.pretitle && (
-        <div className="text-x1 font-bold tracking-wider text-indigo-600 uppercase">
-          {props.pretitle}
+const SectionTitle = ({ pretitle, title, children }) => {
+    return (
+        <div className="bg-blue-600 text-white py-12 flex flex-col items-center justify-center">
+            <div className="mb-4 text-lg uppercase tracking-wider font-semibold">{pretitle}</div>
+            <h2 className="text-4xl font-bold mb-4">{title}</h2>
+            <hr className="border-white w-1/12 mb-4" />
+            <p className="text-xl max-w-2xl text-center mb-8">{children}</p>
+            <button className="bg-transparent border border-white text-white py-2 px-6 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-300">
+                Learn More
+            </button>
         </div>
-      )}
-
-      {props.title && (
-        <h2 className="max-w-2xl mt-3 text-4xl font-bold leading-snug tracking-tight text-blue lg:leading-tight lg:text-4xl dark:text-white">
-          {props.title}
-        </h2>
-      )}
-
-      {props.children && (
-        <p className="max-w-2xl py-4 text-2x1 leading-normal text-blue lg:text-2x1 xl:text-2x1 dark:text-white">
-          {props.children}
-        </p>
-      )}
-    </Container>
-  );
-}
+    );
+};
 
 export default SectionTitle;

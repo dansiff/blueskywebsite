@@ -10,19 +10,19 @@ const Reviews = () => {
         height: '100vh',
     };
     const reviews = [{
-        name: 'Heather G',
-        text: 'I felt heard during my appointment. I have no doubt I will continue using this provider.',
        
+        text: 'I felt heard during my appointment. I have no doubt I will continue using this provider.',
+        name: 'Heather G',
     },
     {
-        name: 'Joan P',
+        
         text: 'Great bedside manner and put me at ease. Although it was my first time seeing her, I felt very comfortable to open up about my history.',
-        
+        name: 'Joan P',
     },
     {
-        name: 'Joshua F',
-        text: 'Great service and would highly recommend!',
         
+        text: 'Great service and would highly recommend!',
+        name: 'Joshua F',
     },
  ];
     
