@@ -21,8 +21,8 @@ const benefitOne = {
      
     },
     {
-      title: "BlueSky Is Here",
-        desc: "Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.",
+        title: "Diverse Team of Experts for Comprehensive Care",
+        desc: " BlueSky Telepsych boasts a diverse team of expert doctors specializing in a wide range of mental health disorders. Our dedicated professionals are here to provide comprehensive care tailored to your specific needs, ensuring you receive the highest quality treatment.",
      
     },
     {
