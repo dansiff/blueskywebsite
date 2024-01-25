@@ -8,23 +8,35 @@ const OverviewBlock = ({ pretitle, title, children, backgroundImage }) => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh'
+
     };
     const contentStyle = {
+
+        maxWidth: '25%',
         maxHeight: "80%",
         padding: '2rem',
         maxWidth: '25%', // Adjust the width of the box as needed
+        color: 'white',
+        borderRadius: '0 1rem 1rem 0',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        lineHeight: '1.4',
+        backgroundColor: 'rgba(30, 64, 175, 0.75'
+
     };
     return (
-        <div className="relative h-full w-full" style={sectionStyle}>
-            <Container className="flex w-full flex-col py-20 lg:flex-row">
-                <div className="flex flex-col bg-blue-800 lg:w-1/3 bg-opacity-75 text-white p-10 rounded-r-lg">
+        <div style={sectionStyle}>
+            <Container>
+                <div style={contentStyle}>
                     {pretitle && (
-                        <div className="text-sm font-bold tracking-wider text-indigo-200 uppercase">
+                        <div style={{ marginBottom: '0.5rem', fontSize: '0.875rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
                             {pretitle}
                         </div>
                     )}
                     {title && (
-                        <h2 className="text-1xl font-bold mt-2 mb-4 leading-snug">
+                        <h2 style={{ marginBottom: '1rem', fontSize: '1rem', fontWeight: 'bold' }}>
                             {title}
                         </h2>
                     )}

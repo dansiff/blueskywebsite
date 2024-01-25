@@ -27,12 +27,7 @@ const Home = () => {
 
       <Navbar />
       <Hero />
-      <SectionTitle
-        pretitle="Locations"
-              title=" BlueSky serves patients in 12 states: ">
-              Arizona, Colorado, Connecticut,Kentucky,
-              Illinois, Maryland, Massachusetts,  Minnesota, New Mexico, North Carolina, Ohio, Oregon, Texas, and Washington.
-      </SectionTitle>
+      
       
           <Benefits imgPos="left" data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -45,7 +40,7 @@ const Home = () => {
           <Reviews />
           <OverviewBlock  
               pretitle="BLUESKY SERVICE AREAS"
-              title="BlueSky has an extensive network of licensed providers throughout the US.
+              title="BlueSky has an extensive network of licensed providers throughout the Globe.
 
 Available in 12 states:
 

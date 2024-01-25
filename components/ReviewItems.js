@@ -5,7 +5,7 @@ const ReviewItem = ({ name, text, rating }) => {
         <div style={slideStyles}>
             <h3>{name}</h3>
             <p>{text}</p>
-            <p>Rating: {rating}</p>
+            <p> {rating}</p>
             {/* Zocdoc image */}
             <div>
                 <img

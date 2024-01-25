@@ -34,8 +34,7 @@ const Hero = () => {
                 rel="noopener"
                 className="flex items-center space-x-2 items-center text-white dark:text-white">
                
-                              <span className="text-2xl"> Use your Blue Cross Blue Shield, Cigna, Aetna, Optum, and United Healthcare insurance plans to cover treatment from licensed BlueSky mental health care providers. 
-                                Otherwise  you can pay out-of-pocket with our self-pay plans. </span>
+                              <span className="text-2xl"> </span>
               </a>
             </div>
           </div>

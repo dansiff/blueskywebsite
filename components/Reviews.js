@@ -12,17 +12,17 @@ const Reviews = () => {
     const reviews = [{
         name: 'Heather G',
         text: 'I felt heard during my appointment. I have no doubt I will continue using this provider.',
-        rating: 5,
+       
     },
     {
         name: 'Joan P',
         text: 'Great bedside manner and put me at ease. Although it was my first time seeing her, I felt very comfortable to open up about my history.',
-        rating: 5,
+        
     },
     {
         name: 'Joshua F',
         text: 'Great service and would highly recommend!',
-        rating: 5,
+        
     },
  ];
     

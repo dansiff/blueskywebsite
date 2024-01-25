@@ -17,20 +17,11 @@ const benefitOne = {
   bullets: [
     {
           title: "If you are looking for a caring professional to provide treatment in the comfort of your home, BlueSky is here to help. BlueSky's experienced network of licensed, mental health care professionals have a sincere and authentic commitment to patient-centered care, structured around optimal evidence- based care to patients.",
-      desc: "Start your new year now.",
+      desc: "",
      
-    },
-    {
-        title: "Diverse Team of Experts for Comprehensive Care",
-        desc: " BlueSky Telepsych boasts a diverse team of expert doctors specializing in a wide range of mental health disorders. Our dedicated professionals are here to provide comprehensive care tailored to your specific needs, ensuring you receive the highest quality treatment.",
-     
-    },
-    {
-        title: "Same day appoints available",
-      desc: "Evidence-based psychiatric treatment from a team that cares.",
-     
-    },
-  ],
+        },
+  ]
+   
 };
 
 const benefitTwo = {
@@ -43,16 +34,9 @@ const benefitTwo = {
           desc: "Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.",
       
     },
-    {
-      title: "BlueSky Service Areas",
-      desc: "BlueSky has an extensive network of licensed providers throughout the US.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Avaliable in 12 States:",
-      desc: "Arizona, Colorado, Connecticut, Kentucky, Illinois, Maryland, Massachusetts, Minnesota, New Mexico, North Carolina, Ohio, Oregon, Texas, Washington. ",
-      icon: <SunIcon />,
-    },
+    
+    
+   
   ],
 };
 

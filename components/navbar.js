@@ -11,11 +11,11 @@ const Navbar = () => {
                         <Image
                             src="/img/blueskyLogo.jpg"
                             alt="BlueSky Logo"
-                            width={150}  // Adjust as needed
+                            width={250}  // Adjust as needed
                             height={75}  // Adjust as needed
                             className="object-contain"
                         />
-                        <span className="text-2xl font-bold text-blue-700">BlueSky</span>
+                        <span className="text-2xl font-bold text-blue-700"></span>
                    
                 {/* ... rest of the navigation items ... */}
 
