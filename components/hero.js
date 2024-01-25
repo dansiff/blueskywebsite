@@ -14,16 +14,17 @@ const Hero = () => {
                       <h1 className="text-4xl font-bold tracking-tight text-white lg:text-5xl  dark:text-white">
                                      Quality Psychiatric Care Provider
             </h1>
-            <p className="mt-4 text-white lg:text-xl xl:text-2xl dark:text-white">
+            <p className="mt-4 text-white lg:text-2xl xl:text-3xl dark:text-white">
                                Let us connect you to a licensed provider today. <br />
                                             1-888-279-0002
             </p>
 
-            <div className="flex flex-col space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="flex flex-col space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center">
               <a
                               href="https://form.jotform.com/240085201242138"
                 target="_blank"
-                rel="noopener"
+                              rel="noopener"
+                              style={{marginTop: 'auto'} }
                 className="px-8 z-10 py-4 inline-block text-lg font-medium flex justify-center text-center text-white bg-indigo-600 rounded-md ">
                 Get Started
               </a>
@@ -33,7 +34,7 @@ const Hero = () => {
                 rel="noopener"
                 className="flex items-center space-x-2 items-center text-white dark:text-white">
                
-                              <span className="text-lg"> Use your Blue Cross Blue Shield, Cigna, Aetna, Optum, and United Healthcare insurance plans to cover treatment from licensed BlueSky mental health care providers. 
+                              <span className="text-2xl"> Use your Blue Cross Blue Shield, Cigna, Aetna, Optum, and United Healthcare insurance plans to cover treatment from licensed BlueSky mental health care providers. 
                                 Otherwise  you can pay out-of-pocket with our self-pay plans. </span>
               </a>
             </div>
@@ -44,8 +45,7 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-indigo-600">2000+</span>{" "}
-            customers worldwide
+                     
           </div>
 
                   <div className="flex justify-center items-center mt-10">
@@ -62,7 +62,7 @@ const Hero = () => {
 
   function LogosSection() {
     return (
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center mt-10 w-full max-w-6x1 mx-auto">
           
             <Image
                 src="/img/brands/big6k5ui.png" // Make sure to put the correct path to the image

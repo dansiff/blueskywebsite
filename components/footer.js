@@ -63,7 +63,7 @@ export default function Footer() {
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">      
+                  <Link key={index} href="https://blueskytelepsych.com/privacy-policy/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">      
                     {item}
                 </Link>
               ))}
@@ -105,14 +105,14 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{"Bluesky"}
+          Copyright © {new Date().getFullYear()}. Made with ♥ by {"BlueSky"}
           <a
             href=""
             target="_blank"
             rel="noopener">
-            Bluesky.
+            
           </a>{" "}
-          Illustrations from{" "}
+          Illustrations from {"BlueSky"}
           <a
             href=""
             target="_blank"
@@ -173,7 +173,7 @@ const Linkedin = ({ size = 24 }) => (
 const Backlink = () => {
   return (
     <a
-          href="https://blueskytelepsych.com/"
+          href="https://form.jotform.com/240085201242138"
       target="_blank"
       rel="noopener"
       className="absolute flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300">
