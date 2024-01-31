@@ -13,10 +13,12 @@ const Hero = () => {
                   <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
 
                   <div className="relative z-10 flex flex-col items-center justify-center h-full w-full text-center">
-                      <h1 className="text-4xl font-bold tracking-tight text-white lg:text-5xl  dark:text-white">
+                      <h1 className="text-5xl lg:text-7xl text-white  font-montserrat">
+
                                      Quality Psychiatric Care Provider
             </h1>
-            <p className="mt-4 text-white lg:text-2xl xl:text-3xl dark:text-white">
+                      <p className="mt-4 text-xl lg:text-3xl text-white  font-montserrat">
+
                                Let us connect you to a licensed provider today. <br />
                                             1-888-279-0002
             </p>

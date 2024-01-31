@@ -39,13 +39,13 @@ const Benefits = ({ imgPos, data }) => {
             </div>
 
             <div
-                className={`flex flex-col items-center justify-center w-full lg:w-1/2 lg:max-w-md p-8 py-4 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
-                    } p-8`}
+                className={`flex flex-col items-center justify-center w-full lg:w-1/2 lg:max-w-sm p-8 py-4 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
+                    } p-8 mr-2/12`}
             >
-                <h3 className="text-2xl items-center lg:text-3xl font-bold text-gray-800 mb-4">
+                <h3 className="text-md items-center lg:text-md font-semibold text-gray-800 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     {data.title}
                 </h3>
-                <p className="text-lg items-center lg:text-xl text-gray-600 mb-6">
+                <p className="text-sm items-center lg:text-md text-gray-600 mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     {data.desc}
                 </p>
                 {data.bullets.map((item, index) => (
@@ -62,9 +62,9 @@ const Benefits = ({ imgPos, data }) => {
 
 const Benefit = ({ title, description }) => {
     return (
-        <div className="flex flex-col  items-center my-4">
-            <h4 className="text-lg lg:text-xl items-center font-semibold text-gray-800 mb-2">{title}</h4>
-            <p className="text-base items-center text-gray-600">{description}</p>
+        <div className="flex flex-col  items-start my-4 ">
+            <h4 className="text-sm lg:text-base items-center font-md text-gray-800 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>{title}</h4>
+            <p className="text-xs lg:text-sm text-gray-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>{description}</p>
         </div>
     );
 };

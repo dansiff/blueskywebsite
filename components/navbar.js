@@ -2,58 +2,48 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
-    const [hasScrolled, setHasScrolled] = useState(false);
+    const [isAtTop, setIsAtTop] = useState(true);
+
     useEffect(() => {
         const handleScroll = () => {
-            const offset = window.scrollY;
-            setHasScrolled(offset > 10);  // Set to true when scrolled down by 10px
+            setIsAtTop(window.scrollY < 50); // If the scroll position is less than 50px, the user is at the top
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-    const navBarClasses = `fixed top-0 inset-x-0 transition-colors duration-300 z-50 ${hasScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+
+    // Adjust the opacity based on the scroll position
+    const navbarStyles = `fixed top-0 inset-x-0 z-50 p-4 flex justify-between items-center max-w-7xl transition-opacity duration-300 ${isAtTop ? "opacity-100" : "opacity-0"
         }`;
 
-
     return (
-        
-        <div className="bg-white shadow-md">
-            <nav className="container mx-auto p-4 flex justify-between items-center max-w-7xl">
-               
-                        <Image
-                            src="/img/blueskyLogo.jpg"
-                            alt="BlueSky Logo"
-                            width={250}  // Adjust as needed
-                            height={75}  // Adjust as needed
-                            className="object-contain"
-                        />
-                        <span className="text-2xl font-bold text-blue-700"></span>
-                   
-                {/* ... rest of the navigation items ... */}
+        <nav className={navbarStyles}>
+            {/* Logo and brand name */}
+            <span className="text-white text-xl font-bold">BlueSky</span>
 
-                <div className="hidden space-x-4 lg:flex lg:items-center">
-                    {/* ... your navigation items for desktop ... */}
-                    <ThemeChanger />
-                </div>
+            {/* Navigation Links */}
+            <div className="hidden md:flex md:space-x-4 md:items-center">
+                {/* Your other navigation items */}
+                {/* ... */}
 
-                <Disclosure as="nav" className="lg:hidden">
-                    {({ open }) => (
-                        <>
-                            <Disclosure.Button className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-                                {/* Hamburger icon for mobile menu */}
-                            </Disclosure.Button>
-                            <Disclosure.Panel className="flex flex-col px-4 pt-4 pb-4 space-y-1">
-                                {/* ... your navigation items for mobile ... */}
-                            </Disclosure.Panel>
-                        </>
-                    )}
-                </Disclosure>
-            </nav>
-        </div>
+                {/* Get Started Button */}
+                <a
+                    href="https://form.jotform.com/240085201242138"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 inline-block text-lg font-medium text-center text-white bg-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out hover:bg-white hover:text-black"
+                >
+                    Get Started
+                </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            {/* Insert hamburger icon button here */}
+        </nav>
     );
 };
 

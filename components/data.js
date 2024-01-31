@@ -30,8 +30,8 @@ const benefitTwo = {
     image: Medicalimage2.src,
   bullets: [
     {
-          title: "BLUESKY IS HERE",
-          desc: "Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.",
+          title: "",
+          desc: "",
       
     },
     

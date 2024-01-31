@@ -11,7 +11,8 @@ module.exports = {
         trueGray: colors.neutral,
       },
     },
-    fontFamily: {
+      fontFamily: {
+        montserrat: ["Montserrat", 'sans-serif'],
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
     },
