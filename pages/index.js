@@ -13,6 +13,17 @@ import Reviews from "../components/Reviews";
 import FeatureSection from "../components/FeatureSection";
 import LogoSection from '../components/LogoSection';
 import HighLight from '../components/HighLight';
+
+
+// Some Next.js page or component
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
+const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION;
+
+// Use these variables in your code
+
+// Use these variables in your code
+
 const Home = () => { 
   return (
     <>
