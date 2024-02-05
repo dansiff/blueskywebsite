@@ -8,7 +8,7 @@ const LogosSection = () => {
             <Image
                 src="/img/brands/big6k5ui.png" // Make sure to put the correct path to the image
                 alt="Insurance Accepted Logos"
-                width={2048} // Set the correct width (in pixels)
+                width={1080} // Set the correct width (in pixels)
                 height={720}  // Set the correct height (in pixels)
                 layout="responsive" // This will make the image scale nicely to the parent element
             />

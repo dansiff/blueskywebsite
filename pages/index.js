@@ -5,8 +5,6 @@ import Carousel from "../components/Carousel";
 import { benefitTwo } from "../components/data";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Cta from "../components/cta";
-import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import OverviewBlock from "../components/OverviewBlock";
 import Reviews from "../components/Reviews";
@@ -14,7 +12,7 @@ import FeatureSection from "../components/FeatureSection";
 import LogoSection from '../components/LogoSection';
 import HighLight from '../components/HighLight';
 import Payinfo from '../components/Payinfo';
-
+import ServiceSection from '../components/ServiceSection';
 // Some Next.js page or component
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
@@ -46,21 +44,21 @@ const Home = () => {
           
           <OverviewBlock  
               pretitle="BLUESKY SERVICE AREAS"
-              title="BlueSky has an extensive network of licensed providers throughout the Globe.
 
-Insurance available in 12 states:
-
-​
-
-Arizona - Colorado - Connecticut - Kentucky - Illinois - Maryland - Massachusetts - Minnesota - New Mexico - North Carolina - Ohio - Oregon - Texas - Washington"
+              title="BlueSky has an extensive network of licensed providers throughout the Globe."
+              subtitle="Insurance available in 12 states:"
+              listItems={['Arizona', 'Colorado', 'Connecticut', 'Kentucky', 'Illinois', 'Maryland', 'Massachusetts', 'Minnesota', 'New Mexico', 'North Carolina', 'Ohio', 'Oregon', 'Texas', 'Washington']}
+             
+              contactInfo="1-888-279-0002"
               backgroundImage="/img/Femaledoctor.jpg"
               
           />
-          <ServiceArea />
+          
+         
               <Payinfo />
          <LogoSection />
      
-     <Carousel />
+    
           
      
       <Footer />
