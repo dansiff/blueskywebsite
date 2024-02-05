@@ -17,7 +17,7 @@ const FeatureSection = () => {
             <div className="flex justify-around items-center h-full">
                 {features.map((feature, index) => (
                     <div key={index} className="flex flex-col items-center text-center px-4">
-                        <div className="mb-3 rounded-full bg-white p-4 icon-hover">
+                        <div className="mb-3 rounded-full bg-white p-4 transition-transform duration-300 ease-in-out hover:scale-110">
                             <feature.Icon className="h-10 w-10 text-blue-600" />
                         </div>
                         <p className="text-center">{feature.text}</p>
