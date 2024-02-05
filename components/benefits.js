@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 import Container from "./container";
 import { benefitOne, benefitTwo } from "./data";
-import ButtonGetStarted from "./ButtonGetStarted"
-import LearnMore from "./LearnMore"
+import ButtonGetStarted from "./ButtonGetStarted";
+import LearnMore from "./LearnMore";
 const Benefits = ({ imgPos, data }) => {
     const parallaxRef = useRef(null);
 
