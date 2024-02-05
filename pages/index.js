@@ -1,7 +1,7 @@
 ﻿import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
-
+import Carousel from "../components/Carousel";
 import { benefitTwo } from "../components/data";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -13,7 +13,7 @@ import Reviews from "../components/Reviews";
 import FeatureSection from "../components/FeatureSection";
 import LogoSection from '../components/LogoSection';
 import HighLight from '../components/HighLight';
-
+import Payinfo from '../components/Payinfo';
 
 // Some Next.js page or component
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
@@ -40,7 +40,6 @@ const Home = () => {
       <Hero />
       <FeatureSection />
       <HighLight />
-         
           <Reviews />
           
           <Benefits imgPos="right" data={benefitTwo} />
@@ -49,18 +48,20 @@ const Home = () => {
               pretitle="BLUESKY SERVICE AREAS"
               title="BlueSky has an extensive network of licensed providers throughout the Globe.
 
-Available in 12 states:
+Insurance available in 12 states:
 
 ​
 
 Arizona - Colorado - Connecticut - Kentucky - Illinois - Maryland - Massachusetts - Minnesota - New Mexico - North Carolina - Ohio - Oregon - Texas - Washington"
               backgroundImage="/img/Femaledoctor.jpg"
               
-              />
+          />
+          <ServiceArea />
+              <Payinfo />
          <LogoSection />
      
-      <Faq />
-          <Cta />
+     <Carousel />
+          
      
       <Footer />
       <PopupWidget />

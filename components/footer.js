@@ -3,129 +3,78 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
+
 export default function Footer() {
     const companyInfo = {
-        Name: "BlueSky Telepsych",
+        name: "BlueSky Telepsych",
         address: "1431 Opus Pl, Suite 110",
+        address2: "Downers Grove, IL 60515",
         phone: "(888) 279-0002",
         email: "hello@blueskytelepsych.com",
 
     };
-  const legal = ["Terms", "Privacy", "Legal"];
-  return (
-    <div className="relative">
-      <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <div>
-              {" "}
-              <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    <Image
-                      src="/img/blueskylogoblue.png"
-                      alt="N"
-                      width="32"
-                      height="32"
-                      className="w-8"
-                    />
-                  <span>BlueSky</span>
-                          </Link>
-                          <div className="mt-4 text-blue-500 dark:text-blue-500">
-               <p>{companyInfo.Name}</p>
-                <p>{companyInfo.address}</p>
-                 <p>{companyInfo.phone}</p>
-                <p>{companyInfo.email}</p> 
+
+    const legal = ["Terms", "Privacy", "Legal"];
+
+    return (
+        <footer className="bg-blue-600 h-m-screen text-white">
+            <div className="container mx-auto px-6 py-10 lg:flex lg:justify-between lg:items-center">
+                <div className="lg:flex lg:items-center">
+                    <div className="mb-6 lg:mb-0 lg:mr-10">
+                        <Link href="/">
+                            
+                               
+                                <span>{companyInfo.name}</span>
+                            
+                        </Link>
+                        <div className="mt-4">
+                            <p>{companyInfo.address}</p>
+                            <p>{companyInfo.address2}</p>
+                            <p>{companyInfo.phone}</p>
+                            <p>{companyInfo.email}</p>
+
+                        </div>
+                    </div>
+                    <div className="border-l-2 border-white pl-10">
+                        <p className="mb-4">Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.</p>
+                        <Link href="/learn-more">
+                            
+                                Learn More
+                           
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="flex flex-col lg:flex-row items-center mt-6 lg:mt-0">
+                    {legal.map((item, index) => (
+                        <Link key={index} href={`/legal/${item.toLowerCase()}`}>
+                            
+                        </Link>
+                    ))}
+                </div>
+
+                <div className="mt-6 lg:mt-0">
+                    <div className="text-sm font-semibold">Follow us</div>
+                    <div className="flex mt-4 space-x-4">
+                        {/* Social media icons */}
+                        <Twitter />
+                        <Facebook />
+                        <Instagram />
+                        <Linkedin />
+                    </div>
                 </div>
             </div>
 
-            <div className="max-w-md mt-4 text-blue-500 dark:text-blue-400">
-              BlueSky Telepsych
-              
-              .
+            <div className="text-xs text-center text-white mt-10">
+                Copyright © {new Date().getFullYear()} BlueSky Telepsych. Made with ♥ by BlueSky Illustrations.
             </div>
-
-            <div className="mt-5">
-              <a
-                              href="https://blueskytelepsych.com/"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44">
-                <Image
-                  src="/img/blueskylogoheader.webp"
-                  alt="Blueskytelepsych"
-                  width="212"
-                  height="44"
-                />
-              </a>
-            </div>
-          </div>
-
-         
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
-                  <Link key={index} href="https://blueskytelepsych.com/privacy-policy/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">      
-                    {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="">
-            <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a
-                 href="https://twitter.com/bskytelepsych"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-              <a
-                href="https://www.facebook.com/people/BlueSky-Telepsych/100092431592418/"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Facebook</span>
-                <Facebook />
-              </a>
-              <a
-                              href="https://www.instagram.com/blueskytelepsych/"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Instagram</span>
-                <Instagram />
-              </a>
-              <a
-                   href="https://www.linkedin.com/company/blue-sky-telepsych"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Linkedin</span>
-                <Linkedin />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by {"BlueSky"}
-          <a
-            href=""
-            target="_blank"
-            rel="noopener">
-            
-          </a>{" "}
-          Illustrations from {"BlueSky"}
-          <a
-            href=""
-            target="_blank"
-            rel="noopener ">
-            
-          </a>
-        </div>
-      </Container>
-      {/* Do not remove this */}
-      <Backlink />
-    </div>
-  );
+        </footer>
+    );
 }
+
+// Your existing social media icon components...
+
+// Place Backlink component here if needed...
 
 const Twitter = ({ size = 24 }) => (
   <svg

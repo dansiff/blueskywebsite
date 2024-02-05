@@ -23,10 +23,10 @@ const Navbar = () => {
     return (
         <nav className={navbarStyles}>
             {/* Logo and brand name */}
-            <span className="text-white text-xl font-bold">BlueSky</span>
+            <span className="text-white ml-28 text-xl font-bold">BlueSky</span>
 
             {/* Navigation Links */}
-            <div className="hidden md:flex md:space-x-4 md:items-center">
+            <div className="hidden md:flex md:space-x-4 md:items-center" style={{ marginLeft: '20px', marginTop: '20px'} }>
                 {/* Your other navigation items */}
                 {/* ... */}
 

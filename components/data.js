@@ -26,7 +26,7 @@ const benefitOne = {
 
 const benefitTwo = {
     title: "Our providers specialize in a wide range of disorders",
-    desc: "Get support for ADHD, ADD, anxiety, anger management, bipolar disorder, depression, grief bereavement, medication management, panic disorder, personality disorder, psychotic disorder, PTSD, and more.        .",
+    desc: "Get support for ADHD, ADD, anxiety, anger management, bipolar disorder, depression, grief bereavement, medication management, panic disorder, personality disorder, psychotic disorder, PTSD, and more.",
     image: Medicalimage2.src,
   bullets: [
     {

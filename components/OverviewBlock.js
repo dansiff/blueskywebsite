@@ -7,17 +7,17 @@ const OverviewBlock = ({ pretitle, title, children, backgroundImage }) => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '100vh'
-
+        height: '100vh',
+        backgroundAttachment: 'fixed',
     };
     const contentStyle = {
 
-        maxWidth: '25%',
-        maxHeight: "80%",
-        padding: '2rem',
+        fontFamily: 'Montserrat, sans-serif',
+        maxHeight: "100%",
+        padding: '5rem',
         maxWidth: '25%', // Adjust the width of the box as needed
         color: 'white',
-        borderRadius: '0 1rem 1rem 0',
+        borderRadius: '0.5rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -47,7 +47,7 @@ const OverviewBlock = ({ pretitle, title, children, backgroundImage }) => {
                     )}
                     {/* Assuming you want to include a button as well */}
                     <a href="https://form.jotform.com/240085201242138"
-                        className="inline-block mt-4 bg-indigo-600 py-2 px-6 rounded-md text-lg font-medium"
+                        className="inline-block mt-4 bg-indigo-600 py-2 px-6 ml-12 rounded-md text-lg font-medium"
                         target="_blank" rel="noopener noreferrer">
                         Get Started
                     </a>

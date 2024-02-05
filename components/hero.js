@@ -12,16 +12,20 @@ const Hero = () => {
                       Your browser does not support the video tag.     </video>
                   <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
 
-                  <div className="relative z-10 flex flex-col items-center justify-center h-full w-full text-center">
-                      <h1 className="text-5xl lg:text-7xl text-white  font-montserrat">
+                  <div className=" z-10 flex flex-col items-center justify-center md:w-1/3 p-6 h-full w-full text-center">
+                      <h1 className="mt-4 text-5xl lg:text-4x1 text-white text-center font-montserrat mb-2">
 
                                      Quality Psychiatric Care Provider
             </h1>
-                      <p className="mt-4 text-xl lg:text-3xl text-white  font-montserrat">
+                      <p className="mt-2 text-2xl lg:text-2xl text-white  font-montserrat mb-6">
 
-                               Let us connect you to a licensed provider today. <br />
-                                            1-888-279-0002
-            </p>
+                                connect with a licensed provider today. <br />
+                                </p>
+                                       <p className="mt-6 text-2xl text-white font-montserrat mb-6">          1-888-279-0002
+                      </p>                                 
+                      <span className="text-white text-lg md:text-xl font-montserrat">
+                          Call us 24/7
+                      </span>
 
             <div className="flex flex-col space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center">
               <a
@@ -29,7 +33,7 @@ const Hero = () => {
                 target="_blank"
                               rel="noopener"
                               style={{marginTop: 'auto'} }
-                className="px-8 z-10 py-4 inline-block text-lg font-medium flex justify-center text-center text-white bg-indigo-600 rounded-md ">
+                              className="px-8 z-10 py-4 inline-block text-lg font-medium flex hover:bg-white hover:text-black justify-center text-center text-white bg-indigo-600 rounded-md ">
                 Get Started
               </a>
               <a

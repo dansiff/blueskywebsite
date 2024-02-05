@@ -13,11 +13,11 @@ const features = [
 
 const FeatureSection = () => {
     return (
-        <div className="bg-blue-600 text-white" style={{ height: '50vh' }}>
+        <div className="bg-blue-600 text-white" style={{ height: '70vh' }}>
             <div className="flex justify-around items-center h-full">
                 {features.map((feature, index) => (
                     <div key={index} className="flex flex-col items-center text-center px-4">
-                        <div className="mb-3 rounded-full bg-white p-4">
+                        <div className="mb-3 rounded-full bg-white p-4 icon-hover">
                             <feature.Icon className="h-10 w-10 text-blue-600" />
                         </div>
                         <p className="text-center">{feature.text}</p>

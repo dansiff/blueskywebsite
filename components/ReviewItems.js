@@ -6,7 +6,7 @@ const ReviewItem = ({ name, text, rating }) => {
         <div style={slideStyles}>
             <div style={{ textAlign: 'center' }}>
                 {/* Quote icon */}
-                <div style={{ position: 'relative', top: '-170px', left: "300px", }}>
+                <div style={{ position: 'relative', top: '-170px', left: "500px", }}>
                     <FaQuoteLeft style={{ color: 'darkgrey', fontSize: '4rem' }} />
                 </div>
                 {/* Review text */}

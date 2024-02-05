@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "~slick-carousel/slick/slick.css";
 
 @layer base {
   html,
@@ -13,4 +15,21 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Add custom styles for the react-slick below this line */
+
+/* Custom styles for slick arrows */
+.slick-prev, .slick-next {
+    color: white !important; /* Change the color to match your design */
+}
+
+/* Custom styles for slick dots */
+.slick-dots li button:before {
+    font-size: 0.75rem; /* Change the size to match your design */
+    color: white !important; /* Change the color to match your design */
+}
+
+.slick-dots li.slick-active button:before {
+    color: white !important; /* Change the color to match your design */
 }
