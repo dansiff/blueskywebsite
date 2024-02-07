@@ -57,7 +57,7 @@ const quoteStyles = {
 const reviewTextStyles = {
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 'semibold', // Make the text bold
-    fontSize: '1.5rem', // Make the text larger
+    fontSize: '2.5rem', // Make the text larger
     margin: '1rem auto', // Ensure it's centered horizontally
     maxWidth: '60%', // Prevent the text from being too wide
 };

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
 import CustomImage from './CustomImage';
-
+import Button from './Button'
 
 const HighLight = () => {
    
@@ -20,18 +20,24 @@ const HighLight = () => {
                     <div className="lg:block absolute h-full w-1 bg-blue-600 ml-[-2rem]"></div>
                     {/* Text Content */}
                     <div className="text-center lg:text-left"> {/* Adjust padding for line spacing */}
-                        <h2 className="text-3xl lg:text-4xl  text-gray-800 leading-snug font-montserrat">Evidence-based psychiatric treatment from a team that cares</h2>
+                        <h2 className="text-3xl lg:text-4xl mb-4 text-gray-800 leading-snug font-montserrat">Evidence-based psychiatric treatment from a team that cares</h2>
                         <p className="text-base lg:text-xl text-gray-600 mt-4" style={{ fontFamily: 'Montserrat, sans-serif', lineHeight: '1.75', letterSpacing: '0.015em' }}>
                             If you are looking for a caring professional to provide treatment in the comfort of your home, BlueSky is here to help.
                             BlueSky's experienced network of licensed, mental health care professionals have a sincere and authentic commitment
-                            to patient-centered care, structured around optimal evidence-based care to patients.
+                            to patient-centered care, structured around evidence-based solutions for positive outcomes. At BlueSky, we approach every patient as an individual -- with empathy and understanding. .
                         </p>
                         {/* Phone Number */}
-                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-12 ml-12 font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
+                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-8 ml-12 font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
                     </div>
                         {/* Start Button */}
-                        <button className="bg-blue-600 text-white py-2 px-6 rounded-full ml-16 font-semibold hover:bg-blue hover:text-black transition-colors justify-center duration-300">Get Started</button>
-                 
+                    <a
+                        href="https://form.jotform.com/240085201242138"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 inline-block text-lg font-medium ml-8 text-white bg-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out hover:bg-white hover:text-black"
+                    >
+                        Get Started
+                    </a>
                 </div> 
             </div>  
             {/* Image Section */}

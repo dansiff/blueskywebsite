@@ -75,7 +75,7 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
                     )}
                     {/* Assuming you want to include a button as well */}
                     <a href="https://form.jotform.com/240085201242138"
-                        className="inline-block bg-indigo-600 py-2 px-6 rounded-md text-lg font-medium transition duration-300 ease-in-out hover:bg-indigo-700 mt-4"
+                        className="inline-block bg-custom-blue py-2 px-6 rounded-md text-lg font-medium transition duration-300 ease-in-out hover:bg-white hover:text-custom-blue mt-4"
                         target="_blank" rel="noopener noreferrer">
                         Get Started
                     </a>
