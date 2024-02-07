@@ -6,20 +6,20 @@ const ReviewItem = ({ name, text, rating }) => {
         <div style={slideStyles}>
             <div style={{ textAlign: 'center' }}>
                 {/* Quote icon */}
-                <div style={{ position: 'relative', top: '-170px', left: "500px", }}>
+                <div style={quoteStyles}>
                     <FaQuoteLeft style={{ color: 'darkgrey', fontSize: '4rem' }} />
                 </div>
                 {/* Review text */}
-                <p style={{ fontStyle: 'italic', margin: '1rem' }}>{text}</p>
+                <p style={reviewTextStyles}>{text}</p>
 
                 {/* Reviewer's name */}
-                <h3 style={{ fontWeight: 'normal', marginTop: '1rem', marginBottom: '2rem' }}>{name}</h3>
+                <h3 style={reviewerNameStyles}>{name}</h3>
 
                 {/* Rating */}
-                <p style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: 'auto' }}>{rating}</p>
+                <p style={ratingStyles}>{rating}</p>
             </div>
             {/* Zocdoc logo at the bottom */}
-            <div style={{ width: '100%', position: 'absolute', bottom: '40px' }}>
+            <div style={zocdocLogoStyles}>
                 <img
                     src="img/zoc-doc-logo-.png"
                     alt="Zocdoc Logo"
@@ -31,19 +31,58 @@ const ReviewItem = ({ name, text, rating }) => {
     );
 };
 
-
 const slideStyles = {
-    fontSize: '24px', // Adjust the font size
-    backgroundColor: 'blue', // Background color
-    color: 'white', // Text color
-    height: '80vh', // Adjust the height as needed
+    fontSize: '24px',
+    backgroundColor: 'blue',
+    color: 'white',
+    height: '80vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '20px',
-    position: 'relative', // Needed for absolute positioning of children
-    textAlign: 'center',
+    position: 'relative',
+    fontFamily: 'Montserrat, sans-serif', // Set the font family to Montserrat
+};
+
+const quoteStyles = {
+    position: 'absolute',
+    top: '5%', // Adjust as necessary to center on all slides
+    left: '50%',
+    transform: 'translateX(-50%)', // Centers the quote icon
+    color: 'white',
+    opacity: '0.8',
+};
+
+const reviewTextStyles = {
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 'semibold', // Make the text bold
+    fontSize: '1.5rem', // Make the text larger
+    margin: '1rem auto', // Ensure it's centered horizontally
+    maxWidth: '60%', // Prevent the text from being too wide
+};
+
+const reviewerNameStyles = {
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '1rem', // Make the name smaller
+    marginTop: '1rem',
+    marginBottom: '2rem',
+    fontStyle: 'font-montserrat',
+};
+
+const ratingStyles = {
+    fontWeight: 'bold',
+    fontSize: '1.5rem',
+    marginBottom: 'auto',
+    fontFamily: 'Montserrat, sans-serif',
+};
+
+const zocdocLogoStyles = {
+    width: '100%',
+    position: 'absolute',
+    bottom: '40px',
+    display: 'flex',
+    justifyContent: 'center', // Center the logo horizontally
 };
 
 export default ReviewItem;

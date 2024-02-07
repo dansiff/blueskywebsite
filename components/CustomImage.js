@@ -1,19 +1,17 @@
-// components/CustomImage.js
-import { useParallax } from 'react-scroll-parallax';
 import React from 'react';
+import Image from 'next/image'; // Correctly import Image from next/image
 
 
 const CustomImage = ({ src, alt }) => {
-    const { ref } = useParallax({ speed: -10 }); 
+    
 
-const Image = ({ src, alt }) => {
     return (
-        <div className="relative w-full h-full">
+        <div className="w-full h-full"> {/* Apply the parallax ref here */}
             <Image
                 src={src}
                 alt={alt}
                 layout="fill"
-                objectFit="cover" // or "contain" based on your needs
+                objectFit="contain" // or "contain" based on your needs
             />
         </div>
     );

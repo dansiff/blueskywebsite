@@ -28,7 +28,7 @@ const Reviews = () => {
     
     return (
         <div>
-            <Carousel style={carouselStyles}>
+            <Carousel style={carouselStyles} infiniteLoop useKeyboardArrows autoPlay>
                 {reviews.map((review, index) => (
                     <ReviewItem key={index} {...review} />
                 ))}

@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav className={navbarStyles}>
             {/* Logo and brand name */}
-            <span className="text-white ml-28 text-xl font-bold">BlueSky</span>
+            <span className="text-white ml-36 text-3xl font-semibold">BlueSky</span>
 
             {/* Navigation Links */}
             <div className="hidden md:flex md:space-x-4 md:items-center" style={{ marginLeft: '20px', marginTop: '20px'} }>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     href="https://form.jotform.com/240085201242138"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 inline-block text-lg font-medium text-center text-white bg-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out hover:bg-white hover:text-black"
+                    className="px-6 py-3 inline-block text-lg font-medium ml-22 text-white bg-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out hover:bg-white hover:text-black"
                 >
                     Get Started
                 </a>

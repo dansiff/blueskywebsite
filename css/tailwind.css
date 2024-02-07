@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "~slick-carousel/slick/slick.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import "~slick-carousel/slick/slick.css";
 
 @layer base {
   html,
@@ -11,7 +12,25 @@
     @apply dark:bg-trueGray-900;
   }
 }
+@layer utilities {
+    /* Add your keyframes animation */
+    @keyframes drop {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
 
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .animate-drop {
+        @apply duration-1000 ease-out; /* Adjust duration and easing as needed */
+        animation-name: drop;
+    }
+
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -21,15 +40,15 @@ body {
 
 /* Custom styles for slick arrows */
 .slick-prev, .slick-next {
-    color: white !important; /* Change the color to match your design */
+    color: white /* Change the color to match your design */
 }
 
 /* Custom styles for slick dots */
 .slick-dots li button:before {
     font-size: 0.75rem; /* Change the size to match your design */
-    color: white !important; /* Change the color to match your design */
+    color: white  /* Change the color to match your design */
 }
 
 .slick-dots li.slick-active button:before {
-    color: white !important; /* Change the color to match your design */
+    color: white /* Change the color to match your design */
 }

@@ -7,7 +7,7 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '90vh',
+        height: '100vh',
         backgroundAttachment: 'fixed',
     };
     const contentStyle = {
@@ -19,7 +19,7 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
         fontFamily: 'Montserrat, sans-serif',
         maxHeight: "100%",
         padding: '5rem',
-        maxWidth: '40%', // Adjust the width of the box as needed
+        maxWidth: '45%', // Adjust the width of the box as needed
         color: 'white',
         borderRadius: '0.5rem',
         display: 'flex',
@@ -33,7 +33,7 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
     return (
         <div style={sectionStyle}>
             <Container>
-                <div className="relative font-montserrat inset-0 bg-blue-700 text-white p-4 md:p-8 lg:p-12 rounded-lg max-w-full md:max-w-md mx-auto my-8 md:my-0 space-y-4 ml-24">
+                <div className="relative h-full font-montserrat inset-0 bg-custom-blue text-white p-4 md:p-8 lg:p-12 rounded-lg max-w-full md:max-w-md mx-auto my-8 md:my-0 space-y-4 ml-24 before:content-[''] before:bg-white before:absolute before:left-[5%] before:top-0 before:bottom-0 before:w-[0.30rem] after:content-[''] after:bg-white after:w-[.40rem] after:opacity-40 before:opacity-20 after:opacity-80 after:absolute after:left-[5%] after:top-[10%] after:h-[20%] after:w-4 after:rounded-sm ">
                     {pretitle && (
                         <div className="uppercase font-montserrat text-sm mb-2 font-light tracking-widest">
                             {pretitle}
@@ -51,9 +51,14 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
                     )}  {listItems && (
                         <div className="flex flex-wrap gap-1 justify-start items-center">
                             {listItems.map((item, index) => (
-                                <span key={index} className="text-sm bg-blue-700 text-white text-bold py-1 px-2 rounded">
+                                <React.Fragment key={index}>
+                                <span key={index} className="text-sm bg-custom-blue text-white text-bold py-1 px-2 rounded tracking-tighter leading-4">
                                     {item}
-                                </span>
+                                    </span> {/* Add a point after the item if it's not the last one */}
+                                    {index < listItems.length - 1 && (
+                                        <span className="text-white mx-2">&bull;</span> // This creates a dot separator
+                                    )}
+                                </React.Fragment>
                             ))}
                         </div>
                     )}
@@ -64,7 +69,7 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
                         </p>
                     )}  {/* Contact Info Section */}
                     {contactInfo && (
-                        <p className="text-lg font-montserrat font-semibold mb-4">
+                        <p className="mt-8 text-lg font-montserrat font-semibold mb-4">
                             {contactInfo}
                         </p>
                     )}
