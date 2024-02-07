@@ -13,10 +13,7 @@ import LogoSection from '../components/LogoSection';
 import HighLight from '../components/HighLight';
 import Payinfo from '../components/Payinfo';
 import ServiceSection from '../components/ServiceSection';
-// Some Next.js page or component
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
-const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION;
+
 
 // Use these variables in your code
 
