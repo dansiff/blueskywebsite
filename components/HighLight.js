@@ -26,17 +26,20 @@ const HighLight = () => {
                             BlueSky's experienced network of licensed, mental health care professionals have a sincere and authentic commitment
                             to patient-centered care, structured around evidence-based solutions for positive outcomes. At BlueSky, we approach every patient as an individual -- with empathy and understanding. .
                         </p>
-                        {/* Phone Number */}
-                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-8 ml-12 font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
+                        {/* Phone Number */} <br />
+                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-12 font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
                     </div>
                         {/* Start Button */}
-                    <a
-                        href="https://form.jotform.com/240085201242138"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-6 py-3 inline-block text-lg font-medium ml-8 text-white bg-blue-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out hover:bg-white hover:text-black"
-                    >
-                        Get Started
+                    <a href="https://form.jotform.com/240085201242138"
+                        className="inline-flex items-center bg-white py-2 px-6 border-2 border-black rounded-md text-lg font-medium transition duration-300 ease-in-out hover:bg-white hover:text-custom-blue mt-4"
+                        target="_blank" rel="noopener noreferrer">
+                        <span>Get Started</span>
+                        <div className="ml-2 w-4 h-4 bg-white flex items-center justify-center">
+                            {/* Arrow icon */}
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-3 h-3 text-custom-blue">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
                     </a>
                 </div> 
             </div>  

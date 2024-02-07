@@ -9,6 +9,7 @@ export default function Footer() {
         name: "BlueSky Telepsych",
         address: "1431 Opus Pl, Suite 110",
         address2: "Downers Grove, IL 60515",
+        Contactus: "Questions? Contact Us 24/7",
         phone: "(888) 279-0002",
         email: "hello@blueskytelepsych.com",
 
@@ -17,27 +18,32 @@ export default function Footer() {
     const legal = ["Terms", "Privacy", "Legal"];
 
     return (
-        <footer className="bg-blue-600 h-m-screen text-white">
+        <footer className="bg-custom-blue h-m-screen text-white">
             <div className="container mx-auto px-6 py-10 lg:flex lg:justify-between lg:items-center">
                 <div className="lg:flex lg:items-center">
                     <div className="mb-6 lg:mb-0 lg:mr-10">
                         <Link href="/">
                             
                                
-                                <span>{companyInfo.name}</span>
+                                <span className="font-bold">{companyInfo.name}</span>
                             
                         </Link>
                         <div className="mt-4">
                             <p>{companyInfo.address}</p>
                             <p>{companyInfo.address2}</p>
-                            <p>{companyInfo.phone}</p>
+                            <p className="font-bold">{companyInfo.Contactus}</p>
+                            <p className="font-bold">{companyInfo.phone}</p>
                             <p>{companyInfo.email}</p>
 
                         </div>
                     </div>
                     <div className="border-l-2 border-white pl-10">
+                    <span>BlueSky Is Here</span> <br />
                         <p className="mb-4">Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.</p>
-                        <Link href="/learn-more">
+                        <br />
+                        <span>1-888-279-0002</span> <br />
+<br />
+                        <Link href="https://form.jotform.com/240085201242138">
                             
                                 Learn More
                            
@@ -76,26 +82,29 @@ export default function Footer() {
 
 // Place Backlink component here if needed...
 
-const Twitter = ({ size = 24 }) => (
-  <svg
+const Twitter = ({ href, size = 24 }) => (
+  
+        <a target="_blank" rel="noopener noreferrer" aria-label="Twitter">  <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
     viewBox="0 0 24 24"
     fill="currentColor">
     <path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z" />
-  </svg>
+    </svg> </a>
+    
 );
 
-const Facebook = ({ size = 24 }) => (
-  <svg
+const Facebook = ({ size = 24, href }) => (
+    
+            <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
     viewBox="0 0 24 24"
     fill="currentColor">
     <path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07" />
-  </svg>
+            </svg> 
 );
 const Instagram = ({ size = 24 }) => (
   <svg

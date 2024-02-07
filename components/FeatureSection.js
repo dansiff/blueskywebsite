@@ -13,7 +13,7 @@ const features = [
 
 const FeatureSection = () => {
     return (
-        <div className="bg-blue-600 text-white" style={{ height: '70vh' }}>
+        <div className="bg-custom-blue text-white" style={{ height: '70vh' }}>
             <div className="flex justify-around items-center h-full">
                 {features.map((feature, index) => (
                     <div key={index} className="flex flex-col items-center text-center px-4">

@@ -7,7 +7,7 @@ const ReviewItem = ({ name, text, rating }) => {
             <div style={{ textAlign: 'center' }}>
                 {/* Quote icon */}
                 <div style={quoteStyles}>
-                    <FaQuoteLeft style={{ color: 'darkgrey', fontSize: '4rem' }} />
+                    <FaQuoteLeft style={{ color: 'lightgrey', fontSize: '4rem' }} />
                 </div>
                 {/* Review text */}
                 <p style={reviewTextStyles}>{text}</p>
@@ -65,7 +65,7 @@ const reviewTextStyles = {
 const reviewerNameStyles = {
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '1rem', // Make the name smaller
-    marginTop: '1rem',
+    marginTop: '3rem',
     marginBottom: '2rem',
     fontStyle: 'font-montserrat',
 };
