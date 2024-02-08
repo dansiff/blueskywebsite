@@ -25,7 +25,7 @@ const Benefits = ({ imgPos, data }) => {
             
 
             <div
-                className={`relative flex items-center justify-center w-full lg:w-1/2 ${imgPos === "left" ? "lg:order-last" : "lg:order-first"
+                className={`relative flex items-center dark:bg-trueGray-800 dark:text-white justify-center w-full lg:w-1/2 ${imgPos === "left" ? "lg:order-last" : "lg:order-first"
                     } overflow-hidden`}
             >
                 <div ref={parallaxRef} className="w-full h-full">
@@ -41,7 +41,7 @@ const Benefits = ({ imgPos, data }) => {
             </div>
 
             <div
-                className={`flex flex-col items-center justify-center w-full lg:w-1/2 ml-16 lg:max-w-sm p-8 py-4 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
+                className={`flex flex-col items-center dark:bg-trueGray-800 dark:text-white justify-center w-full lg:w-1/2 ml-16 lg:max-w-sm p-8 py-4 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
                     } p-8 mr-2/12`}
             >     <Image
                     src="/img/ratingimage.png
@@ -50,13 +50,13 @@ const Benefits = ({ imgPos, data }) => {
                     height={70} // Adjust height as needed
                     alt="Top Image"
                 />
-                <h3 className="text-2xl items-center lg:text-3xl font-medium mt-4 text-gray-800 mb-4 ml-24 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif', lineHeight: '1.75' }}>
+                <h3 className="text-2xl items-center lg:text-3xl dark:bg-trueGray-800 dark:text-white font-medium mt-4 text-gray-800 mb-4 ml-24 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif', lineHeight: '1.75' }}>
                     {data.title}
                 </h3>
-                <p className="text-md items-center lg:text-md text-gray-600 mb-4 ml-24" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <p className="text-md items-center dark:bg-trueGray-800 dark:text-white lg:text-md text-gray-600 mb-4 ml-24" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     {data.desc}
                 </p>
-                <div className="text-xl text-gray-800 font-semibold mb-4 ml-8 mt-4 font-Montserrat">
+                <div className="text-xl text-gray-800 dark:bg-trueGray-800 dark:text-white font-semibold mb-4 ml-8 mt-4 font-Montserrat">
                     {/* Replace '1' with the variable or state that holds the number you want to display */}
                     1-888-279-0002
                 </div>
@@ -83,9 +83,9 @@ const Benefits = ({ imgPos, data }) => {
 
 const Benefit = ({ title, description }) => {
     return (
-        <div className="flex flex-col  items-start my-4 ml-16">
-            <h4 className="text-md lg:text-lg items-center font-md text-gray-800 mb-2 ml-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>{title}</h4>
-            <p className="text-xs lg:text-sm text-gray-600 ml-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>{description}</p>
+        <div className="flex flex-col dark:bg-trueGray-800 dark:text-white items-start my-4 ml-16">
+            <h4 className="text-md lg:text-lg dark:bg-trueGray-800 dark:text-white items-center font-md text-gray-800 mb-2 ml-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>{title}</h4>
+            <p className="text-xs lg:text-sm dark:bg-trueGray-800 dark:text-white text-gray-600 ml-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>{description}</p>
         </div>
     );
 };
