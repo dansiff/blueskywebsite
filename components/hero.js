@@ -26,7 +26,7 @@ const Hero = () => {
                           <span className="mt-6 text-2xl text-white font-montserrat relative after:content-[''] after:block after:w-full after:h-1 after:bg-blue-600 after:absolute after:-bottom-1">
                               Call us 24/7
                           </span>
-                      </div> <span className="block text-white text-lg md:text-xl mb-6 mt-6 font-montserrat text-center">
+                      </div> <span className="block text-white font-semibold text-lg md:text-xl mb-6 mt-6 font-montserrat text-center">
                           1-888-279-0002
                       </span>
             <div className="flex flex-col space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center">
@@ -35,7 +35,7 @@ const Hero = () => {
                 target="_blank"
                               rel="noopener"
                               style={{marginTop: 'auto'} }
-                              className="px-8 z-10 py-4 inline-block text-lg font-medium mt-6 flex hover:bg-white hover:text-black justify-center text-center text-white bg-blue-600 rounded-md ">
+                              className="px-8 z-10 py-4 inline-block text-lg font-medium mt-6 flex hover:bg-custom-blue hover:text-white justify-center text-center text-custom-blue bg-white rounded-md ">
                 Get Started
               </a>
               <a

@@ -18,7 +18,7 @@ export default function Footer() {
     const legal = ["Terms", "Privacy", "Legal"];
 
     return (
-        <footer className="bg-custom-blue h-m-screen text-white">
+        <footer className="bg-custom-blue h-auto text-white">
             <div className="container mx-auto px-6 py-10 lg:flex lg:justify-between lg:items-center">
                 <div className="lg:flex lg:items-center">
                     <div className="mb-6 lg:mb-0 lg:mr-10">
@@ -31,9 +31,10 @@ export default function Footer() {
                         <div className="mt-4">
                             <p>{companyInfo.address}</p>
                             <p>{companyInfo.address2}</p>
+                            <br />
                             <p className="font-bold">{companyInfo.Contactus}</p>
                             <p className="font-bold">{companyInfo.phone}</p>
-                            <p>{companyInfo.email}</p>
+                            <p className="font-semibold">{companyInfo.email}</p>
 
                         </div>
                     </div>
@@ -41,7 +42,7 @@ export default function Footer() {
                     <span>BlueSky Is Here</span> <br />
                         <p className="mb-4">Finding professional, compassionate psychiatric providers should be easy. BlueSky is here to support you on your mental healthcare journey.</p>
                         <br />
-                        <span>1-888-279-0002</span> <br />
+                        <span className="font-semibold">1-888-279-0002</span> <br />
 <br />
                         <Link href="https://form.jotform.com/240085201242138">
                             

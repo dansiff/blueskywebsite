@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
 import CustomImage from './CustomImage';
-import Button from './Button'
+
 
 const HighLight = () => {
    
@@ -27,7 +27,7 @@ const HighLight = () => {
                             to patient-centered care, structured around evidence-based solutions for positive outcomes. At BlueSky, we approach every patient as an individual -- with empathy and understanding. .
                         </p>
                         {/* Phone Number */} <br />
-                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-12 font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
+                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-12 font-semibold font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
                     </div>
                         {/* Start Button */}
                     <a href="https://form.jotform.com/240085201242138"
