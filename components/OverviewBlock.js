@@ -33,7 +33,7 @@ const OverviewBlock = ({ pretitle, title, children, subtitle, listItems, contact
     return (
         <div style={sectionStyle}>
             <Container>
-                <div className="relative h-full font-montserrat inset-0 bg-custom-blue text-white p-4 md:p-8 lg:p-12 rounded-lg max-w-full md:max-w-md mx-auto my-8 md:my-0 space-y-4 ml-24 before:content-[''] before:bg-white before:absolute before:left-[5%] before:top-0 before:bottom-0 before:w-[0.30rem] after:content-[''] after:bg-white after:w-[.40rem] after:opacity-40 before:opacity-20 after:opacity-80 after:absolute after:left-[5%] after:top-[10%] after:h-[20%] after:w-4 after:rounded-sm" >
+                <div className="relative h-full dark:bg-trueGray-800 dark:text-white font-montserrat inset-0 bg-custom-blue text-white p-4 md:p-8 lg:p-12 rounded-lg max-w-full md:max-w-md mx-auto my-8 md:my-0 space-y-4 ml-24 before:content-[''] before:bg-white before:absolute before:left-[5%] before:top-0 before:bottom-0 before:w-[0.30rem] after:content-[''] after:bg-white after:w-[.40rem] after:opacity-40 before:opacity-20 after:opacity-80 after:absolute after:left-[5%] after:top-[10%] after:h-[20%] after:w-4 after:rounded-sm" >
                     {pretitle && (
                         <div className="uppercase font-montserrat text-sm mb-2 font-light tracking-widest">
                             {pretitle}

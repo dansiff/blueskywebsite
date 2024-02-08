@@ -7,7 +7,7 @@ import CustomImage from './CustomImage';
 const HighLight = () => {
    
     return (
-        <div className="flex flex-col lg:flex-row items-center h-full lg:items-start lg:space-x-8 justify-center">
+        <div className="flex flex-col lg:flex-row items-center dark:bg-trueGray-800 dark:text-white h-full lg:items-start lg:space-x-8 justify-center">
             {/* Text Section */}
             <div className="lg:flex-1 flex-1 px-4 lg:px-12 py-12 lg:py-24">
                 {/* Same Day Appointments Box */}

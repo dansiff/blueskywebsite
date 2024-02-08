@@ -21,7 +21,7 @@ const Benefits = ({ imgPos, data }) => {
     }, []);
 
     return (
-        <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap h-screen bg-white rounded-xl overflow-hidden" fullWidth>
+        <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap h-screen bg-white dark:bg-trueGray-800 dark:text-white rounded-xl overflow-hidden" fullWidth>
             
 
             <div
