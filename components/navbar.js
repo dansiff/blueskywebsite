@@ -40,7 +40,8 @@ const Navbar = () => {
                     Get Started
                 </a>
             </div>
-
+            {/* Theme Changer Button */}
+            <ThemeChanger />
             {/* Mobile Menu Button */}
             {/* Insert hamburger icon button here */}
         </nav>
