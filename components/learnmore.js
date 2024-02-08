@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LearnMore = ({ href }) => {
+const Learnmore = ({ href }) => {
     return (
         <a href={href} className="inline-flex items-center justify-center border-2 border-black text-black font-medium py-2 px-6 transition duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none">
             Learn More
@@ -13,4 +13,4 @@ const LearnMore = ({ href }) => {
     );
 };
 
-export default LearnMore;
+export default Learnmore;

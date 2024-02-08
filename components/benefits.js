@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import Container from "./container";
 import { benefitOne, benefitTwo } from "./data";
 import ButtonGetStarted from "./ButtonGetStarted";
-import LearnMore from "./LearnMore";
+import Learnmore from "./Learnmore";
 const Benefits = ({ imgPos, data }) => {
     const parallaxRef = useRef(null);
 
@@ -67,7 +67,7 @@ const Benefits = ({ imgPos, data }) => {
                     <Benefit key={index} title={item.title} description={item.desc} />
                 ))} 
                 <div className="mt-4 ml-16">
-                    <LearnMore href="https://form.jotform.com/240085201242138" />
+                    <Learnmore href="https://form.jotform.com/240085201242138" />
 
                
                 </div>
