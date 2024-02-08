@@ -44,8 +44,7 @@ const Benefits = ({ imgPos, data }) => {
                 className={`flex flex-col items-center dark:bg-trueGray-800 dark:text-white justify-center w-full lg:w-1/2 ml-16 lg:max-w-sm p-8 py-4 ${imgPos === "left" ? "lg:order-first" : "lg:order-last"
                     } p-8 mr-2/12`}
             >     <Image
-                    src="/img/ratingimage.png
-" // Replace with your image path
+                    src="/img/ratingimage.png" // Replace with your image path
                     width={144} // Adjust width as needed
                     height={70} // Adjust height as needed
                     alt="Top Image"
