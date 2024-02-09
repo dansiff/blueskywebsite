@@ -29,13 +29,13 @@ const Hero = () => {
                       </div> <span className="block text-white font-semibold text-lg md:text-xl mb-6 mt-6 font-montserrat text-center">
                           1-888-279-0002
                       </span>
-            <div className="flex flex-col space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center">
+            <div className="flex flex-col space-y-3 sm:space-x-4 rounded-lg sm:space-y-0 sm:items-center">
               <a
                               href="https://form.jotform.com/240085201242138"
                 target="_blank"
                               rel="noopener"
                               style={{marginTop: 'auto'} }
-                              className="px-8 z-10 py-4 inline-block text-lg font-medium mt-6 flex hover:bg-custom-blue hover:text-white justify-center text-center text-custom-blue bg-white rounded-md ">
+                              className="px-5 z-10 py-2 inline-block text-lg font-medium mt-6 flex hover:bg-custom-blue hover:text-white justify-center text-center text-custom-blue bg-white rounded-lg ">
                 Get Started
               </a>
               <a

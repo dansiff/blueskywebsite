@@ -47,7 +47,7 @@ const Home = () => {
               listItems={['Arizona', 'Colorado', 'Connecticut', 'Kentucky', 'Illinois', 'Maryland', 'Massachusetts', 'Minnesota', 'New Mexico', 'North Carolina', 'Ohio', 'Oregon', 'Texas', 'Washington']}
              
               contactInfo="1-888-279-0002"
-              backgroundImage="/img/Femaledoctor.jpg"
+              backgroundImage="/img/femaledoctor.jpg"
               
           />
           
