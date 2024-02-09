@@ -65,7 +65,7 @@ const Benefits = ({ imgPos, data }) => {
                     <Benefit key={index} title={item.title} description={item.desc} />
                 ))} 
                 <div className="mt-4 ml-16">
-                    <a href="https://form.jotform.com/240085201242138" className="inline-flex items-center justify-center border-2 border-black text-black font-medium py-2 px-6 transition duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none">
+                    <a href="https://form.jotform.com/240085201242138" className="inline-flex items-center dark:bg-white justify-center border-2 border-black text-black font-medium py-2 px-6 transition duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none">
                         Learn More
                         <div className="inline-flex justify-center items-center ml-2 border-2 border-black rounded-full w-4 h-4">
                             <svg className="w-6 h-6" fill="none" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
