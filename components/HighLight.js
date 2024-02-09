@@ -12,7 +12,8 @@ const HighLight = () => {
             <div className="lg:flex-1 flex-1 px-4 lg:px-12 py-12 lg:py-24">
                 {/* Same Day Appointments Box */}
                 <div className=" lg:text-left text-left w-auto mb-4 text-center justify-center ml-40">
-                    <p className="font-light text-blue-600 text-normal ml-24 leading-light font-montserrat">SAME DAY <br /> APPOINTMENTS AVAILABLE</p>
+                    <p className="font-light text-blue-600 tracking-wider text-sm text-normal ml-24 leading-normal font-montserrat">SAME DAY <br /> APPOINTMENTS AVAILABLE</p>
+                    <br />
                 </div>
 
                 <div className="space-y-6 relative mx-auto max-w-sm lg:max-w-sm lg:mx-auto"> {/* Adjust max-width as needed */}
@@ -20,18 +21,19 @@ const HighLight = () => {
                     <div className="lg:block absolute h-full w-1 bg-blue-600 ml-[-2rem]"></div>
                     {/* Text Content */}
                     <div className="text-center lg:text-left"> {/* Adjust padding for line spacing */}
-                        <h2 className="text-3xl lg:text-4xl mb-4 text-gray-800 leading-snug font-montserrat">Evidence-based psychiatric treatment from a team that cares</h2>
-                        <p className="text-base lg:text-xl text-gray-600 mt-4" style={{ fontFamily: 'Montserrat, sans-serif', lineHeight: '1.75', letterSpacing: '0.015em' }}>
+                        <p className="text-base lg:text-xl text-gray-600 mt-4" > {/* Adjust font size as needed */}</p>
+                            <h2 className="text-2xl lg:text-2xl mb-4 text-gray-800 font-montserrat" style={{ lineHeight: '1.8', letterSpacing: '0.08em' }}>Evidence-based psychiatric treatment from a team that cares</h2> <br />
+                        <p className="text-base lg:text-xl text-gray-600 mt-4" style={{ fontFamily: 'Montserrat, sans-serif', lineHeight: '1.8', letterSpacing: '0.08em' }}>
                             If you are looking for a caring professional to provide treatment in the comfort of your home, BlueSky is here to help.
                             BlueSky's experienced network of licensed, mental health care professionals have a sincere and authentic commitment
-                            to patient-centered care, structured around evidence-based solutions for positive outcomes. At BlueSky, we approach every patient as an individual -- with empathy and understanding. .
-                        </p>
-                        {/* Phone Number */} <br />
-                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-12 font-semibold font-montserrat mb-4">1-888-279-0002</span> {/* Added this line for phone number */}
-                    </div>
+                            to patient-centered care, structured around evidence-based solutions for positive outcomes. At BlueSky, we approach every patient as an individual -- with empathy and understanding.
+                        </p> <br />
+                        {/* Phone Number */} <br /> 
+                        <span className="text-lg lg:text-xl text-bold text-gray-800 mt-12 font-semibold font-montserrat mb-7">1-888-279-0002</span> {/* Added this line for phone number */}
+                    </div> <br />
                         {/* Start Button */}
                     <a href="https://form.jotform.com/240085201242138"
-                        className="inline-flex items-center bg-white py-2 px-6 border-2 border-black rounded-md text-lg font-medium transition duration-300 ease-in-out hover:bg-white hover:text-custom-blue mt-4"
+                        className="inline-flex items-center bg-white py-2 px-6 border-2 border-black rounded-md text-lg font-medium transition duration-300 ease-in-out hover:bg-white hover:text-custom-blue mt-6"
                         target="_blank" rel="noopener noreferrer">
                         <span>Get Started</span>
                         <div className="ml-2 w-4 h-4 bg-white flex items-center justify-center">
